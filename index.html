@@ -45,11 +45,13 @@
             cursor: pointer;
             font-size: 100%;
         }
-        #disqus_thread {
-    position: relative; /* lub position: static; */
-    margin-top: 20px; /* Ustaw margines na górnej krawędzi */
-    margin-bottom: 20px; /* Ustaw margines na dolnej krawędzi */
+#disqus_thread {
+    margin-top: 20px; /* Dodaj margines na górze dla odstępu */
+    margin-bottom: 20px; /* Dodaj margines na dole dla odstępu */
+    padding: 20px; /* Dodaj wewnętrzny odstęp dla sekcji komentarzy */
+    box-sizing: border-box; /* Spowoduje, że wewnętrzne marginesy nie zmienią szerokości sekcji */
 }
+
 
     </style>
 </head>
