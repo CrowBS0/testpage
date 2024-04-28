@@ -3,11 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Comments</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://github.com/SpeedyPL/Images_Testing/blob/main/icon_placeholder.png?raw=true">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #000000, #660000);
+            height: 100vh; /* Ustawiamy wysokość na 100% wysokości ekranu */
+            resize: none; /* Blokowanie zmiany rozmiaru okna przeglądarki */
+        }
+        
+        header {
+            color: #ff0000;
+            font-size: 1.5rem;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background-color: rgba(51, 51, 51, 0.484); /* Dodajemy przezroczystość do koloru tła */
+            padding: 0px;
+            font-family: 'Creepster', cursive;
+        }
+        
+        header button{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 1%;
+            z-index: 9999;
+            background-color: #ff0000;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            padding: 1.5% 2.5%;
+            cursor: pointer;
+            font-size: 100%;
+        }
+        #disqus_thread {
+    position: fixed; /* lub position: absolute; */
+    bottom: 0;
+    left: 0; /* lub right: 0; */
+}
+    </style>
 </head>
 <body>
-    Niggers
-    <div id="disqus_thread" style="margin-bottom: 20%;"></div>
+    <header>
+        <h1>COMMENTS</h1>
+        <!-- Przycisk do przekierowania na inną stronę -->
+        <button onclick="window.location.href='https://speedypl.github.io/HorrorGame/'">Go back</button>
+    </header>
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -20,11 +70,12 @@
     */
     (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
-    s.src = 'https://testpage-yhbdo15r9c.disqus.com/embed.js';
+    s.src = 'https://horror-game-comments.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<div id="disqus_thread" class="disqus_thread"></div>
 </body>
 </html>
